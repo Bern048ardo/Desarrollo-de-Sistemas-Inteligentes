@@ -164,3 +164,116 @@ Ejemplo: La búsqueda en amplitud puede consumir mucha memoria porque debe guard
 | Completitud    | Sí                 | No siempre         | Sí                |
 | Optimalidad    | Con costos iguales | No                 | Sí                |
 | Uso de memoria | Alto               | Generalmente menor | Alto              |
+
+## Imagen 1. Breadth-First Search (BFS) sin diagonales
+
+En esta imagen se utiliza el algoritmo BFS, que busca un camino explorando las casillas por niveles, comenzando desde el punto verde hasta llegar al rojo.
+
+La opción de movimiento diagonal está desactivada, por lo que solamente puede avanzar hacia arriba, abajo, izquierda o derecha. Por eso, el área explorada tiene forma de rombo.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 0.6000 ms
+    
+- Operaciones: 443
+    
+
+Explicación: El algoritmo encontró el camino más corto, pero necesitó realizar 443 operaciones porque exploró diferentes casillas antes de llegar al destino.
+
+## Imagen 2. Breadth-First Search (BFS) con diagonales
+
+En esta segunda imagen se utiliza nuevamente BFS, pero ahora se permite el movimiento diagonal.
+
+Esto hace que el algoritmo pueda explorar en ocho direcciones y que el área de búsqueda tenga una forma cuadrada. Aunque tiene más posibilidades de movimiento, el camino encontrado sigue siendo una línea recta.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 0.2000 ms
+    
+- Operaciones: 843
+    
+
+Explicación: Al permitir movimientos diagonales, el algoritmo explora más direcciones y realiza 843 operaciones. Aunque hizo más operaciones que en la primera imagen, el tiempo registrado fue menor.
+
+## Imagen 3. Breadth-First Search (BFS) bidireccional
+
+En esta imagen se utiliza BFS con la opción bidireccional activada.
+
+Esto significa que el algoritmo comienza a buscar desde el punto inicial y desde el punto final al mismo tiempo. Las dos búsquedas avanzan hasta encontrarse, formando dos áreas exploradas.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 0.4000 ms
+    
+- Operaciones: 203
+    
+
+Explicación: Esta configuración fue más eficiente en cantidad de operaciones porque no necesitó explorar tantas casillas como las configuraciones anteriores. Encontró el mismo camino utilizando solamente 203 operaciones.
+
+## Imagen 4. Algoritmo Dijkstra con diagonales
+
+En esta imagen se utiliza Dijkstra, un algoritmo que encuentra caminos de menor costo entre dos puntos.
+
+Tiene activado el movimiento diagonal, por lo que puede explorar en ocho direcciones. El área de búsqueda tiene una forma más redondeada debido a que el algoritmo considera el costo acumulado de los movimientos.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 1.7000 ms
+    
+- Operaciones: 643
+    
+
+Explicación: Dijkstra encontró el camino de menor costo realizando 643 operaciones. En esta prueba tardó más que BFS, pero es útil cuando existen rutas con diferentes costos de movimiento.
+
+## Imagen 5. Algoritmo Dijkstra bidireccional
+
+En esta imagen se utiliza Dijkstra con la opción bidireccional activada y sin movimientos diagonales.
+
+El algoritmo comienza a buscar desde ambos extremos, creando dos zonas de exploración que se encuentran en el centro. Esto permite reducir la cantidad de casillas que necesita revisar.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 0.8000 ms
+    
+- Operaciones: 175
+    
+
+Explicación: Esta configuración realizó menos operaciones que las demás imágenes. Al buscar desde los dos puntos simultáneamente, consiguió encontrar el camino utilizando solamente 175 operaciones.
+
+## Imagen 6. Algoritmo Dijkstra sin diagonales
+
+En esta última imagen se utiliza Dijkstra sin permitir movimientos diagonales. También aparece activada la opción para no atravesar esquinas.
+
+El algoritmo explora las casillas de manera horizontal y vertical, formando un rombo. Como el camino entre los dos puntos es recto y no existen obstáculos, encuentra la misma ruta que los demás algoritmos.
+
+Resultados:
+
+- Longitud del camino: 10
+    
+- Tiempo: 1.1000 ms
+    
+- Operaciones: 483
+    
+
+Explicación: Dijkstra encontró el camino realizando 483 operaciones. A diferencia de la versión bidireccional, necesitó explorar una zona más grande porque solamente comenzó la búsqueda desde el punto inicial.
+
+## Comparación de las seis imágenes
+
+|Imagen|Algoritmo|Tiempo|Operaciones|
+|---|---|---|---|
+|1|BFS sin diagonales|0.6000 ms|443|
+|2|BFS con diagonales|0.2000 ms|843|
+|3|BFS bidireccional|0.4000 ms|203|
+|4|Dijkstra con diagonales|1.7000 ms|643|
+|5|Dijkstra bidireccional|0.8000 ms|175|
+|6|Dijkstra sin diagonales|1.1000 ms|483|
