@@ -277,15 +277,23 @@ Explicación: Dijkstra encontró el camino realizando 483 operaciones. A diferen
 |4|Dijkstra con diagonales|1.7000 ms|643|
 |5|Dijkstra bidireccional|0.8000 ms|175|
 |6|Dijkstra sin diagonales|1.1000 ms|483|
+
+
+
+----------------------
+
 Actividad_3.2
 ![[Pasted image 20261014155847.png]]
 
-Longitud: 14
-Tiempo: 1.000 ms
-Operaciones: 132
+
+- Longitud: 14
+- Tiempo: 1.000 ms
+- Operaciones: 132
 
 ![[Pasted image 20261014160422.png]]
 
-Longitud: 14
-Tiempo: 1.100 ms
-Operaciones: 786
+
+
+- Longitud: 14
+- Tiempo: 1.100 ms
+- Operaciones: 786
