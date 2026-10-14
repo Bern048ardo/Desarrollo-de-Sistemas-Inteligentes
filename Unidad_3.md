@@ -283,6 +283,8 @@ Explicación: Dijkstra encontró el camino realizando 483 operaciones. A diferen
 ----------------------
 
 Actividad_3.2
+
+
 ![[Pasted image 20261014155847.png]]
 
 
