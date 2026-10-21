@@ -299,3 +299,16 @@ Actividad_3.2
 - Longitud: 14
 - Tiempo: 1.100 ms
 - Operaciones: 786
+
+-----
+Actividad 3.4
+
+- Como se benefician las redes neuronales de los gpu's y las gpu's de las redes neuronales?
+Las GPU hacen que las redes neuronales trabajen más rápido, mientras que las redes neuronales impulsan nuevas tecnologías y mejoras en las GPU.
+---
+
+Actividad 3.5
+
+![[Pasted image 20261021163439.png]]
+
+
