@@ -312,3 +312,14 @@ Actividad 3.5
 ![[Pasted image 20261021163439.png]]
 
 
+---
+
+Actividad 3.6
+
+
+
+|             | Mamdani                                                                                            | Takagi-Sugeno                                                                                                             |
+| ----------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Definición  | Sistema de lógica difusa que utiliza reglas SI-ENTONCES y conjuntos difusos para tomar decisiones. | Sistema de lógica difusa que utiliza reglas SI-ENTONCES, pero sus salidas son valores constantes o funciones matemáticas. |
+| Ventajas    | Fácil de entender, utiliza lenguaje humano y permite crear reglas sencillas.                       | Es rápido, preciso en muchos problemas de control y necesita menos cálculos para obtener la salida.                       |
+| Desventajas | Puede ser más lento y requiere un proceso de desdifusificación.                                    | Es más difícil de interpretar y necesita definir funciones matemáticas.                                                   |
